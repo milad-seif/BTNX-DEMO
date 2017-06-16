@@ -1,0 +1,46 @@
+﻿<form class="form-horizontal" role="form">
+    <fieldset>
+        <legend>Job Seeker Questionnaire</legend>
+        <div class="form-group">
+
+            <label for="personId" class="col-sm-3 control-label">Person Id</label>
+            <div class="col-sm-9">
+                <input type="text" id="Id" name="Id"
+                       ng-model="Id" class="form-control" readonly="readonly" />
+            </div>
+
+            <label for="xp" class="col-sm-3 control-label">Experience Level</label>
+            <div class="col-sm-9">
+                <select id="xp" name="xp" class="form-control"
+                        ng-model="selectedXP"
+                        ng-options="g for g in XP"></select>
+            </div>
+
+            <label for="industries" class="col-sm-3 control-label">Industry of Interest</label>
+            <div class="col-sm-9">
+                <input type="text" id="industries" name="industries"
+                       ng-model="Industries" class="form-control" />
+            </div>
+
+            <label for="locations" class="col-sm-3 control-label">Job Location Preference</label>
+            <div class="col-sm-9">
+                <input type="text" id="locations" name="locations"
+                       ng-model="Locations" class="form-control" />
+            </div>
+
+            <label for="keywords" class="col-sm-3 control-label">Keywords</label>
+            <div class="col-sm-9">
+                <input type="text" id="keywords" name="keywords"
+                       ng-model="Keywords" class="form-control" />
+            </div>
+        </div>
+    </fieldset>
+
+    <div class="col-sm-offset-3 col-sm-9">
+        <input type="button" class="btn btn-default" value="Cancel"
+               ng-click="cancelForm()" />
+        <input type="button" class="btn btn-primary" value="Submit"
+               ng-click="submitForm()" />
+    </div>
+
+</form>

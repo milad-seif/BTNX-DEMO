@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Model.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Job-seeker-questionnaire">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Experience-level" Type="tinyint" Nullable="false" />
+    <Property Name="Industries" Type="varchar(max)" />
+    <Property Name="Locations" Type="varchar(max)" />
+    <Property Name="Keywords" Type="varchar(max)" />
+  </EntityType>
+  <EntityContainer Name="ModelStoreContainer">
+    <EntitySet Name="Job-seeker-questionnaire" EntityType="Self.Job-seeker-questionnaire" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BTNX_DBModelStoreContainer" CdmEntityContainer="BTNX_DBEntities">
+    <EntitySetMapping Name="Job_Seeker_Questionnaire">
+      <EntityTypeMapping TypeName="BTNX_DBModel.Job_Seeker_Questionnaire">
+        <MappingFragment StoreEntitySet="Job_Seeker_Questionnaire">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Experience" ColumnName="Experience" />
+          <ScalarProperty Name="Industries" ColumnName="Industries" />
+          <ScalarProperty Name="Locations" ColumnName="Locations" />
+          <ScalarProperty Name="Keywords" ColumnName="Keywords" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
